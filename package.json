@@ -1,5 +1,5 @@
 {
-  "name": "melodymaker",
+  "name": "Template---Gulp-Eslint-Stylus",
   "version": "1.0.0",
   "description": "Gulp init",
   "main": "index.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Milouu/melodyMaker.git"
+    "url": "git+https://github.com/vtimsit/Template---Gulp-Eslint-Stylus.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Milouu/melodyMaker/issues"
+    "url": "https://github.com/vtimsit/Template---Gulp-Eslint-Stylus/issues"
   },
-  "homepage": "https://github.com/Milouu/melodyMaker#readme",
+  "homepage": "https://github.com/vtimsit/Template---Gulp-Eslint-Stylus#readme",
   "devDependencies": {
     "browser-sync": "^2.23.5",
     "del": "^3.0.0",

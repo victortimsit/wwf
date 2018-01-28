@@ -40,7 +40,7 @@ Task to automatically sync browser when a changes is made on a styl, js or html 
 $gulp watch
 ```
 
-####To build /dist
+#### To build /dist
 
 Task to run all optimization tasks at the same time to build dist repository
 
@@ -50,7 +50,7 @@ $gulp build
 
 ### Other commands
 
-####To concat and minify CSS/JS/HTML
+#### To concat and minify CSS/JS/HTML
 
 Task to concat and minify css & js files and transfer them to dist directory
 
@@ -58,7 +58,7 @@ Task to concat and minify css & js files and transfer them to dist directory
 $gulp useref
 ```
 
-####To transfer and minify images
+#### To transfer and minify images
 
 Task to minify images and transfer them to dist directory
 
@@ -66,7 +66,7 @@ Task to minify images and transfer them to dist directory
 $gulp images
 ```
 
-####To transfer fonts
+#### To transfer fonts
 
 Task to transfer fonts to dist directory
 
@@ -74,7 +74,7 @@ Task to transfer fonts to dist directory
 $gulp fonts
 ```
 
-####To transfer sounds
+#### To transfer sounds
 
 Task to transfer sound to dist directory
 
@@ -82,7 +82,7 @@ Task to transfer sound to dist directory
 $gulp sounds
 ```
 
-####To clean /dist
+#### To clean /dist
 
 Task to clean dist directory
 
@@ -96,7 +96,7 @@ Task to clean dist directory expect for the images
 $gulp clean:dist
 ```
 
-####To build without clear
+#### To build without clear
 
 Default task to build dist repository (without clean)
 

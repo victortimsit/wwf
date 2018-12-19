@@ -1,0 +1,23 @@
+.bottomValidation {
+  width: 100%;
+  height: 86px;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 18px;
+  background-color: $black;
+  color: $white;
+  font-size: 14px;
+  font-family: Regular;
+  opacity: 0;
+  visibility: hidden;
+}
+.bottomValidation__canceled {
+  text-decoration: underline;
+}
+.bottomValidation.active {
+  opacity: 1;
+  visibility: visible;
+}

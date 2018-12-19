@@ -6,3 +6,8 @@ h2 {
   font-weight: bold;
   font-family: Bold;
 }
+.cta {
+  background-color: $green;
+  padding: 15px 20px;
+  border-radius: 30px;
+}

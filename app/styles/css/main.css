@@ -236,6 +236,11 @@ h2 {
   font-weight: bold;
   font-family: Bold;
 }
+.cta {
+  background-color: #4fc16e;
+  padding: 15px 20px;
+  border-radius: 30px;
+}
 header {
   width: 100%;
   height: 80px;
@@ -387,6 +392,7 @@ footer .nav__label {
   height: 88px;
   display: flex;
   align-items: center;
+  justify-content: center;
   text-align: center;
   user-select: none;
   background-color: #f8f8f8;
@@ -394,6 +400,9 @@ footer .nav__label {
   visibility: visible;
   opacity: 1;
   transition: opacity 0.3s;
+}
+.cards .card__donationButton .points__logo {
+  display: none;
 }
 .cards .card__donationBar {
   width: 88px;
@@ -470,4 +479,37 @@ footer .nav__label {
 }
 .cards .card.active .card__paragraph {
   opacity: 0;
+}
+.cards .card__donationButton.active {
+  background-color: #000;
+  color: #fff;
+  font-size: 30px;
+}
+.cards .card__donationButton.active .points__logo {
+  width: 25px;
+  display: block;
+  margin-left: 0px;
+}
+.bottomValidation {
+  width: 100%;
+  height: 86px;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 18px;
+  background-color: #000;
+  color: #fff;
+  font-size: 14px;
+  font-family: Regular;
+  opacity: 0;
+  visibility: hidden;
+}
+.bottomValidation__canceled {
+  text-decoration: underline;
+}
+.bottomValidation.active {
+  opacity: 1;
+  visibility: visible;
 }

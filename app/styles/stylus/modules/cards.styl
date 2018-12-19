@@ -67,6 +67,7 @@
     height 88px
     display flex
     align-items center
+    justify-content center
     text-align center
     user-select none
 
@@ -77,6 +78,9 @@
     visibility visible
     opacity 1
     transition opacity .3s
+
+    & .points__logo
+        display none
 
     // &.active
     //   visibility hidden
@@ -165,4 +169,13 @@
 
     .card__paragraph
       opacity 0
+
+  .card__donationButton.active
+    background-color $black
+    color $white
+    font-size 30px
+    .points__logo
+      width 25px
+      display block
+      margin-left 0px
 

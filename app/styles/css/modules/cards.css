@@ -1,0 +1,142 @@
+.cards {
+  margin-top: $topBarHeight;
+  padding: 30px 18px;
+  margin-bottom: 56px;
+}
+.cards .card:first-child {
+  margin-top: 0px;
+}
+.cards .card {
+  width: 100%;
+  height: 334px;
+  margin: 30px 0;
+  position: relative;
+  background-color: $white;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px 0 rgba(0,0,0,0.08);
+  font-family: Regular;
+  font-size: 14px;
+  transform: scale(1);
+  transition: transform 0.1s;
+}
+.cards .card__image {
+  height: 128px;
+  width: 100%;
+  transition: height 0.3s, opacity 0.2s;
+}
+.cards .card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.cards .card__content {
+  height: 206px;
+  width: 100%;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  transition: height 0.3s;
+}
+.cards .card__text {
+  height: 100%;
+  width: 210px;
+  position: relative;
+  margin-right: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.cards .card__paragraph {
+  opacity: 1;
+  transition: opacity 0.3;
+}
+.cards .card__donationButton {
+  width: 88px;
+  height: 88px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  user-select: none;
+  background-color: $lightGrey;
+  border-radius: 100%;
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+.cards .card__donationBar {
+  width: 88px;
+  height: 300px;
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  overflow: hidden;
+  border-radius: 8px;
+  background-color: $lightGrey;
+  transform: translateY(-50%) scaleY(0.3);
+  transform-origin: 0 236px;
+  opacity: 0;
+  visibility: hidden;
+  transition: transform 0.3s, opacity 0.5s;
+}
+.cards .card__donationFiller {
+  width: 100%;
+  height: 100%;
+  background-color: $green;
+  transform-origin: bottom;
+  transform: scaleY(0.5);
+}
+.cards .points {
+  width: 140px;
+  height: 140px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $black;
+  border-radius: 100%;
+  color: $white;
+  font-family: Regular;
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0.3s, opacity 0.2s;
+  opacity: 0;
+}
+.cards .points__number {
+  font-size: 46px;
+}
+.cards .points__logo {
+  width: 40px;
+}
+.cards .points__logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.cards .card.active {
+  transform: scale(1.02);
+}
+.cards .card.active .points {
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+}
+.cards .card.active .card__donationBar {
+  visibility: visible;
+  transform: translateY(-50%) scaleY(1);
+  opacity: 1;
+}
+.cards .card.active .card__donationButton {
+  visibility: hidden;
+  opacity: 0;
+}
+.cards .card.active .card__image {
+  height: 0;
+  opacity: 0;
+}
+.cards .card.active .card__content {
+  height: 100%;
+}
+.cards .card.active .card__paragraph {
+  opacity: 0;
+}

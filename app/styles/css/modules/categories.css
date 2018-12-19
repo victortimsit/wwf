@@ -1,0 +1,32 @@
+.categories {
+  width: 100%;
+  height: 50px;
+  padding: 0 18px;
+  z-index: 10;
+  background-color: $white;
+  overflow-x: scroll;
+  position: fixed;
+  top: $headerHeight;
+  font-family: Regular;
+  font-size: 18px;
+}
+.categories ul {
+  display: flex;
+  height: 100%;
+  padding-right: 18px;
+}
+.categories ul li:first-child {
+  text-decoration: underline;
+  opacity: 1;
+}
+.categories ul li:last-child {
+  padding-right: 28px;
+}
+.categories ul li {
+  margin-right: 50px;
+  height: 100%;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  opacity: 0.4;
+}
